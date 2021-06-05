@@ -1,0 +1,103 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+.page-content {
+    margin-top: 74px;
+    @include media-breakpoint-down(sm) {
+        margin-top: 68px;
+    }
+    .contact {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        @include media-breakpoint-down(md) {
+            padding-top: 88px;
+            padding-bottom: 88px;
+        }
+        h6 {
+            font-weight: 500;
+            font-size: 15px;
+            color: #FA9D4C;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 64px;
+            letter-spacing: -0.1px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            @include media-breakpoint-down(md) {
+                font-size: 24px;
+                line-height: 36px;
+                text-transform: capitalize;
+                letter-spacing: -0.5px;
+                padding-left: 0;
+                padding-right: 0;
+                margin-bottom: 0;
+            }
+        }
+        .mail {
+            margin-top: 36px;
+            font-weight: 600;
+            font-size: 16px;
+            color: #FFFFFF;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            padding-left: 42px;
+            padding-right: 42px;
+            background-color: #FB973B;
+            text-decoration: none;
+            @include media-breakpoint-down(md) {
+                padding-top: 16px;
+                padding-bottom: 16px;
+                padding-left: 36px;
+                padding-right: 36px;
+                font-size: 14px;
+            }
+        }
+        .social {
+            margin-top: 48px;
+            @include media-breakpoint-down(md) {
+                margin-top: 32px;
+            }
+            a {
+                font-size: 16px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                &:nth-child(2) {
+                    margin-left: 56px;
+                    margin-right: 56px;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: 14px;
+                    &:nth-child(2) {
+                        margin-left: 40px;
+                        margin-right: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    border-top: 1px solid #323232;
+    p {
+        color: #D8D8D8;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-weight: 500;
+        font-size: 18px;
+        @include media-breakpoint-down(sm) {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.page-about {
+    .about {
+        padding-top: 60px;
+        .desc {
+            padding-top: 20px;
+            @include media-breakpoint-down(md) {
+                order: 2;
+            }
+            h5 {
+                font-weight: 500;
+                font-size: 16px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #FB973B;
+                @include media-breakpoint-down(md) {
+                    font-size: 14px;
+                }
+            }
+            h3 {
+                font-weight: 600;
+                font-size: 40px;
+                letter-spacing: -0.5px;
+                color: #FFFFFF;
+                @include media-breakpoint-down(md) {
+                    font-size: 24px;
+                }
+            }
+            p {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 180%;
+                color: #D8D8D8;
+                @include media-breakpoint-down(md) {
+                    font-size: 14px;
+                }
+            }
+        }
+        .profile {
+            @include media-breakpoint-down(md) {
+                order: 1;
+            }
+        }
+    }
+}

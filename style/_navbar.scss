@@ -1,0 +1,48 @@
+.navbar-porto {
+    width: unset;
+    @include media-breakpoint-down(md) {
+        background-color: #121212 !important;
+    }
+    .navbar-brand {
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: -0.5px;
+        color: #D8D8D8;
+        @include media-breakpoint-down(sm) {
+            font-size: 20px;
+        }
+    }
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0);
+        padding-left: 0;
+        padding-right: 0;
+        .navbar-toggler-icon {
+            color: #D8D8D8;
+            width: 24px;
+        }
+    }
+    .nav-item {
+        &.active {
+            font-size: 18px;
+            text-decoration-line: underline;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+        .nav-link {
+            @include media-breakpoint-up(lg) {
+                padding-left: 35px;
+                padding-right: 35px;
+            }
+            color: #D8D8D8;
+            text-transform: capitalize;
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #121212 !important;
+    transition: background-color 200ms linear;
+}

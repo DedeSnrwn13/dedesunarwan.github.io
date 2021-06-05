@@ -1,0 +1,109 @@
+.page-home {
+    .banner {
+        padding-top: 190px;
+        padding-bottom: 190px;
+        @include media-breakpoint-down(md) {
+            padding-top: 56px;
+            padding-bottom: 56px;
+        }
+        h6 {
+            font-weight: 500;
+            font-size: 15px;
+            color: #FA9D4C;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 64px;
+            letter-spacing: -0.1px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            padding-left: 200.5px;
+            padding-right: 200.5px;
+            @include media-breakpoint-down(md) {
+                font-size: 26px;
+                line-height: 36px;
+                letter-spacing: -0.5px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+    .work {
+        margin-top: 30px;
+        h5 {
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FA9D4C;
+            margin-bottom: 8px;
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+            }
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 40px;
+            letter-spacing: -0.5px;
+            color: #FFFFFF;
+            @include media-breakpoint-down(md) {
+                font-size: 24px;
+            }
+        }
+        .card {
+            margin-top: 34px;
+            background: transparent;
+            @include media-breakpoint-down(md) {
+                margin-top: 24px;
+            }
+            img.thumb {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .card-body {
+                margin-top: 26px;
+                @include media-breakpoint-down(md) {
+                    margin-top: 16px;
+                }
+                .card-title {
+                    font-weight: 600;
+                    font-size: 22px;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                    margin-bottom: 8px;
+                    @include media-breakpoint-down(md) {
+                        font-size: 18px;
+                    }
+                }
+                .card-text {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 180%;
+                    color: #D8D8D8;
+                    margin-bottom: 18px;
+                    @include media-breakpoint-down(md) {
+                        font-size: 14px;
+                        margin-bottom: 16px;
+                    }
+                }
+                .visit {
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    @include media-breakpoint-down(md) {
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
