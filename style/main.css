@@ -11002,6 +11002,12 @@ footer p {
   text-transform: capitalize;
 }
 
+.navbar-porto .nav-item .nav-link:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
 @media (min-width: 992px) {
   .navbar-porto .nav-item .nav-link {
     padding-left: 35px;

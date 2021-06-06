@@ -29,6 +29,10 @@
             color: #FFFFFF;
         }
         .nav-link {
+            &:hover {
+                text-decoration-line: underline;
+                color: #FFFFFF;
+            }
             @include media-breakpoint-up(lg) {
                 padding-left: 35px;
                 padding-right: 35px;
